@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "homepage": "https://icestark-react.surge.sh",
+  "dependencies": {
+    "@arco-design/web-react": "^2.48.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@iceworks/spec": "^1.0.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "build-plugin-icestark": "^2.0.0",
+    "eslint": "^7.30.0",
+    "ice.js": "^2.0.0",
+    "stylelint": "^13.7.2"
+  },
+  "scripts": {
+    "dev": "icejs start --port 8761",
+    "build": "icejs build",
+    "prepublishOnly": "npm run build",
+    "lint": "npm run eslint && npm run stylelint",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\""
+  },
+  "scaffoldConfig": {
+    "name": "ice-stark-layout",
+    "title": "icestark 主应用",
+    "categories": [
+      "icestark"
+    ],
+    "screenshot": "https://img.alicdn.com/tfs/TB1WMB9YAL0gK0jSZFAXXcA9pXa-1625-883.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-lab/react-materials/tree/master/scaffolds/icestark-layout"
+  }
+}
